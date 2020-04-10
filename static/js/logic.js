@@ -34,16 +34,6 @@ function circle_creator (features, fill, _rad){
 } 
 
 
-function getValue(x) {
-    return x >= 5 ? "#ff2f45" :
-           x >= 4 ? "#ff9049" :
-           x >= 3 ? "#ffa062" :
-           x >= 2 ? "#ffe92f" :
-           x >= 1 ? "#adff2f" :
-           "#45ff2f";
-}
-
-
 d3.json(url, function(error, response){
 	
 	if (error) throw error;
