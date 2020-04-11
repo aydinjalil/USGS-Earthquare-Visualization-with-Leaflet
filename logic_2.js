@@ -130,6 +130,7 @@ function layer_creator(){
 		// });
 		create_map([earthquakes, boundaries]);
 	})
+
 	// console.log(lat_long);
 	
 	// var polyline = L.polyline(polylinePoints)
