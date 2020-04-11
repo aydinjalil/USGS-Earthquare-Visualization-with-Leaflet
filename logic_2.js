@@ -116,7 +116,7 @@ function layer_creator(){
 	});
 
 	// Read donwload json data containing data of Earthquake Fault Lines
-	d3.json("../data/static/PB2002_boundaries.json", function(error, data){
+	d3.json("PB2002_boundaries.json", function(error, data){
 		if (error) throw error;
 		var plates = L.geoJSON(data, {
 			color: "red", 
@@ -130,9 +130,6 @@ function layer_creator(){
 		// });
 		create_map([earthquakes, boundaries]);
 	})
-	// console.log(lat_long);
-	
-	// var polyline = L.polyline(polylinePoints)
 }
 
 
